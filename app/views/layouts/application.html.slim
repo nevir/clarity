@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Clarity - Implementation-Agnostic Ruby Documentation
+    meta[charset="utf-8"]
+
+    = stylesheet_link_tag :base, media: :all
+    = javascript_include_tag :vendor
+    = javascript_include_tag :base
+    = csrf_meta_tags
+
+  body
+    = yield
