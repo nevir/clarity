@@ -1,0 +1,4 @@
+- if @current_user
+  h2 We have a user #{@current_user.inspect}
+- else
+  = link_to("Sign In", authorize_path(:github))
